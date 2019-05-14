@@ -1,13 +1,24 @@
-<header>
-  <div class="logo">
-    <h1>Saveroba</h1>
-  </div>
-  <nav>
-    <ul>
-      <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'About Us', pages_about_path %></li>
-      <li><%= link_to 'Projects', root_path %></li>
-      <li><%= link_to 'Contact Us', pages_contact_path %></li>
-    </ul>
-  </nav>
-</header>
+<nav class="navbar">
+  <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+    <i class="fa fa-bars"></i>
+  </label>
+  <%= link_to 'Saveroba', root_path, class: "logo" %>
+  <input type="checkbox" id="chkToggle"></input>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="#" class="nav-links">Home</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Products</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">About Us</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Contact Us</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Blog</a>
+    </li>
+  </ul>
+</nav>
